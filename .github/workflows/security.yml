@@ -17,5 +17,5 @@ jobs:
         with:
           image-ref: 'devsecops-app:${{ github.sha }}'
           format: 'table'
-          [cite_start]exit-code: '1' # Hace que el pipeline falle si detecta algo grave [cite: 83]
-          [cite_start]severity: 'CRITICAL,HIGH' [cite: 78]
+          exit-code: '1'
+          severity: 'CRITICAL,HIGH'
